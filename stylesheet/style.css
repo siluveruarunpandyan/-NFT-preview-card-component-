@@ -9,12 +9,12 @@
 }
 
 :root{
-   -clr--Soft-blue: -clr-Very-dark-blue-main-BG;
--clr--Cyan: hsl(178, 100%, 50%);
--clr-Very-dark-blue-main-BG: hsl(217, 54%, 11%);
--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
--Very-dark-blue-line: hsl(215, 32%, 27%);
--White: hsl(0, 0%, 100%);
+   --clr--Soft-blue:hsl(215, 51%, 70%) ;
+--clr--Cyan: hsl(178, 100%, 50%);
+--clr-Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
 }
 
 html{
@@ -44,21 +44,88 @@ color: ;
 }
 
 .card-container{
-    background-color:var(-Very-dark-blue-card-BG);
-    display: flex;
+    background-color:var(--Very-dark-blue-card-BG);
+   
     align-items: center;
     flex-direction: column;
     justify-content:center ;
-    margin: 4rem;
-    padding: 1.25rem;
+    margin: rem;
+    padding: 1rem;
     border-radius: 10px;
+    width: 18rem;
+    height: 33rem;
 
 }
 .img-container img{
     border-radius: 10px;
-    margin-bottom: 2rem;
-    padding-botto
+    margin-bottom: 1.5rem;
 
 }
+.icons{
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;  
+  width: 100%;
+  margin-top: 1rem;
+}
 
+.eqi {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
 
+.description{
+    font-size: 14px;
+    color: var(--clr--Soft-blue);
+}
+.icons i {
+    color: aqua;
+}
+.ethe span{
+    color: aqua;
+    font-size: 15px;
+}
+.clock i{
+    font-size: 1rem;
+   color: var(--clr--Soft-blue);
+}
+.clock span{
+    color: var(--clr--Soft-blue);
+    font-size: 15px;
+}
+
+hr{
+    color: var(--clr--Soft-blue);
+    margin: 1rem;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.foot-img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.foot-para{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 3.0rem;
+   
+}
+.foot-para p{
+    font-size: 14px;
+    color: var(--clr--Soft-blue);
+}
+.foot-para p span{
+    color: #fff;
+}
